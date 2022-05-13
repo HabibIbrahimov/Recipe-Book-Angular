@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {
-  ingredients=[];
+  ingredients: Ingredient[]=[
+    new Ingredient('Apple', 10),
+    new Ingredient('Orange', 5),
+
+  ];
   constructor() { }
 
   ngOnInit(): void {
